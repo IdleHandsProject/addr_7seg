@@ -1,0 +1,112 @@
+PCBNEW-LibModule-V1  Tue 17 Mar 2015 07:04:27 PM CET
+# encoding utf-8
+Units mm
+$INDEX
+WS2812
+WS2812B
+$EndINDEX
+$MODULE WS2812
+Po 0 0 0 15 5508514A 00000000 ~~
+Li WS2812
+Sc 0
+AR /55062623
+Op 0 0 0
+T0 0 -3.8 1 1 0 0.15 N V 21 N "U?"
+T1 0 4 1 1 0 0.15 N V 21 N "WS2812"
+DS -2.5 2.5 2.5 2.5 0.15 21
+DS -2.5 -2.5 2.5 -2.5 0.15 21
+DS -1.25 -2.15 -1.25 -1.45 0.15 21
+DS -1.25 -1.45 -0.55 -2.15 0.15 21
+DS -0.55 -2.15 -1.25 -2.15 0.15 21
+$PAD
+Sh "5" R 1.5 0.9 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2.45 0
+$EndPAD
+$PAD
+Sh "2" R 1.5 0.9 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2.45 0
+$EndPAD
+$PAD
+Sh "1" R 1.5 0.9 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2.45 -1.65
+$EndPAD
+$PAD
+Sh "3" R 1.5 0.9 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2.45 1.65
+$EndPAD
+$PAD
+Sh "4" R 1.5 0.9 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2.45 1.65
+$EndPAD
+$PAD
+Sh "6" R 1.5 0.9 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2.45 -1.65
+$EndPAD
+$EndMODULE WS2812
+$MODULE WS2812B
+Po 0 0 0 15 55086C8A 00000000 ~~
+Li WS2812B
+Sc 0
+AR /55062623
+Op 0 0 0
+T0 0 -3.8 1 1 0 0.15 N V 21 N "U?"
+T1 0 4 1 1 0 0.15 N V 21 N "WS2812B"
+T2 -1.2 0.3 1 1 0 0.15 N V 21 N "out"
+T2 1.7 -0.3 1 1 0 0.15 N V 21 N "in"
+T2 0.9 1.6 1 1 0 0.15 N V 21 N "-"
+T2 -0.8 -1.6 1 1 0 0.15 N V 21 N "+"
+DS -2.5 0.8 -2.5 -0.8 0.15 21
+DS 2.5 0.8 2.5 -0.8 0.15 21
+DS -2.5 2.5 2.5 2.5 0.15 21
+DS -2.5 -2.5 2.5 -2.5 0.15 21
+DS 1.2 1.1 1.2 0.4 0.15 21
+DS 1.2 0.4 0.5 1.1 0.15 21
+DS 0.5 1.1 1.2 1.1 0.15 21
+$PAD
+Sh "1" R 1.5 0.9 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2.45 -1.65
+$EndPAD
+$PAD
+Sh "2" R 1.5 0.9 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -2.45 1.65
+$EndPAD
+$PAD
+Sh "3" R 1.5 0.9 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2.45 1.65
+$EndPAD
+$PAD
+Sh "4" R 1.5 0.9 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 2.45 -1.65
+$EndPAD
+$EndMODULE WS2812B
+$EndLIBRARY

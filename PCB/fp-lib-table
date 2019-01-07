@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name project_footprints)(type KiCad)(uri "$(KIPRJMOD)/project_libs/project_footprints.pretty")(options "")(descr ""))
+  (lib (name ws28xx)(type Legacy)(uri ${KIPRJMOD}/project_libs/ws28xx.mod)(options "")(descr ""))
+  (lib (name logos)(type KiCad)(uri ${KIPRJMOD}/project_libs/logos.pretty)(options "")(descr ""))
+)
