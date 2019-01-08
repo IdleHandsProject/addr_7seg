@@ -1,6 +1,6 @@
 /*
-   Check out the video for the Addressable Seven Segment Display at http://Youtube.com/seanhodgins
-
+   Check out the video for the Addressable Seven Segment Display at https://youtu.be/nfvzyg8gkIE
+   
    This is an example program to run the addressable 7 segment display chain.
    Connect to pin 9 and define how many Digits you have in the daisy chain
    I refer to each 7 segment display as a DIGIT, and easy led in a digit as a SEGMENT
