@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name ws28xx)(type Legacy)(uri ${KIPRJMOD}/project_libs/ws28xx.lib)(options "")(descr ""))
-)
