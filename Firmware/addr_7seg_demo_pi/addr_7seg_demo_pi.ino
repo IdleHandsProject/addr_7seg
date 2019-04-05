@@ -21,7 +21,7 @@
 #endif
 
 
-#define TESTDISPLAY
+//#define TESTDISPLAY
 
 
 #define PIN             9             //The Pin that connects to the data line of the FIRST (Rightmost) digit.
@@ -31,7 +31,7 @@
 uint8_t numGRB[10] = {0b01101111, 0b00001100, 0b11100101, 0b10101101, 0b10001110, 0b10101011, 0b11101011, 0b00001101, 0b11101111, 0b10001111};
 uint8_t setDEC[NUMDIGITS] = {};
 
-Adafruit_NeoPixel segments = Adafruit_NeoPixel(NUMWS2811, PIN, NEO_GRB + NEO_KHZ800); //Required to initiallize the digits
+Adafruit_NeoPixel segments = Adafruit_NeoPixel(NUMWS2811, PIN, NEO_GRB + NEO_KHZ400); //Required to initiallize the digits
 
 int delayval = 1000; // delay for half a second
 
@@ -43,14 +43,46 @@ void setup() {
   segments.begin(); // Starts NeoPixel library.
   Serial.begin(115200);
 
-#ifdef TESTDISPLAY
-  while (1) {
-    for (int y = 0; y < NUMDIGITS; y++) {
-      testDisplay(y, 100);
-    }
+  Serial.begin(115200);
+    for (int x = 0; x < NUMDIGITS; x++) {
+    setDEC[x] = 0;
   }
-#endif
+  // Set WiFi to station mode and disconnect from an AP if it was Previously
+  // connected
+
+    //api_lasttime = millis();
+    changeDEC[3];
+    //Serial.println(subs);
+   
+    //writeDigit(4, (subs / 10000) %10, 50);
+    //writeDigit(3, (subs / 1000) %10, 50);
+    //writeDigit(2, (subs / 100) % 10, 50);
+    //writeDigit(1, (subs / 10) % 10, 50);
+//    writeDigit(19, 3, 25);
+//    writeDigit(18, 1, 25);
+//    writeDigit(17, 4, 25);
+//    writeDigit(16, 1, 25);
+//    writeDigit(15, 5, 25);
+//    writeDigit(14, 9, 25);
+//    writeDigit(13, 2, 25);
+//    writeDigit(12, 6, 25);
+//    writeDigit(11, 5, 25);
+//    writeDigit(10, 3, 25);
+//    writeDigit(9, 5, 25);
+//    writeDigit(8, 8, 25);
+//    writeDigit(7, 9, 25);
+//    writeDigit(6, 7, 25);
+//    writeDigit(5, 9, 25);
+//    writeDigit(4, 3, 25);
+    writeDigit(3, 8, 100);
+    writeDigit(2, 8, 100);
+    writeDigit(1, 8, 45);
+    writeDigit(0, 8, 110);
+    segments.show();
+    while(1);
+
 }
+
 
 uint8_t number = 0;
 
