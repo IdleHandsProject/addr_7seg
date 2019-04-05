@@ -53,9 +53,9 @@ void Addr_7seg::setDisplay(uint16_t num, uint8_t value)
     seg[i] = (segments >> i & 1) * brightnessArray[num];
   }
 
-  pixels->setPixelColor(pixel, pixels->Color(seg[5], seg[0], seg[1]));
-  pixels->setPixelColor(pixel + 1, pixels->Color(pointArray[num]*brightnessArray[num], seg[2], seg[3]));
-  pixels->setPixelColor(pixel + 2, pixels->Color(seg[5],seg[4], ledBrightnessArray[num]));
+  pixels->setPixelColor(pixel, pixels->Color(seg[7], seg[6], seg[5]));
+  pixels->setPixelColor(pixel + 1, pixels->Color(seg[4], pointArray[num]*brightnessArray[num], seg[2]));
+  pixels->setPixelColor(pixel + 2, pixels->Color(seg[1],seg[0], ledBrightnessArray[num]));
   pixels->show();
 }
 void Addr_7seg::setPoint(uint16_t num, bool on)
